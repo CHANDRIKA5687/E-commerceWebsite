@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- bootstrap links starts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- font links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Quicksand:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="top-navbar">
+        
+        
+        </div>
+<!-- nav bar start from here -->
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo"><span id="span1">Do</span> Shopp<span>ing</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="images\menubar.png" alt="" width="30px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product-cards">Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+              <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+              <li><a class="dropdown-item" href="#">Cameras</a></li>
+              <li><a class="dropdown-item" href="#">Charger</a></li>
+              <li><a class="dropdown-item" href="#">AC</a></li>
+              <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+              <li><a class="dropdown-item" href="#">Headphone</a></li>
+              <li><a class="dropdown-item" href="#">Laptop</a></li>
+              <li><a class="dropdown-item" href="#">PC/Moniter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <!-- <div class="icons">
+            <a href="login.html"> <img src="" alt=""width="18px" class="fa fa-sign-in" aria-hidden="true">LogIN</a>
+            <a href="register.html"> <img src="" alt=""width="18px" class="fa fa-sign-in" aria-hidden="true">Register</a>
+
+        </div> -->
+        </ul>
+</div>
+    </div>
+        </div>
+        <form class="d-flex" id="search">
+            <input class="form-control me-2" type="search"placeholder="Search" aria-label="Search"size=100%>
+<button class="btn btn-outline-success" type="submit">Search</button>
+                      
+            <!-- <button class="btn btn-outline-success" type="submit">Register</button> -->
+            <button class="btn btn-outline-success" type="submit">Login</button>
+          </form>
+
+        
+        
+      </div>
+    </div>
+  </nav>
+<!-- navbar -->
+<div class="slider">
+    <img src="images\mainbg1.png">
+    <img src="images\Sale Sale Sale !!!.png">
+    <img src="images\mainbg2.png">
+  </div>
+  <div>
+    <div class="content">
+        <h1> <span></span>
+           <br>
+          Grab Chance To Get <span id="span2"> Up To 30% to 50%</span> Off
+         </h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, saepe.
+           <br>Lorem ipsum dolor sit amet consectetur.
+         </p>
+         <div class="btn"><button>Shop Now</button></div>
+       </div>
+       
+  </div>
+<style>.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+  }
+  
+</style>  
+<script>const images = document.querySelectorAll('.slider img');
+
+    let index = 0;
+    images[index].classList.add('active');
+    
+    setInterval(() => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 3000);
+    </script>
+    <!-- <div class="container">
+      <div class="col-md4-mb4">
+        <div class="card">
+          <div class="card-img">
+<img src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div> -->
+<div class="container" id="product-cards">
+    <h1 class="text-center">PRODUCTS</h1>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\iphone 13 pro.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Iphone 13 pro</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$1000 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\airpods.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Airpods</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$100 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\laptop.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Laptop</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$200 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\ipad.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Ipad</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$300 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\smart watch.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Smart Watch</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$50.60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\PC Moniter.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">PC Moniter</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$600 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\iPhone x.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">iPhone x</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$500 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="images\headphone.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Headphone</h3>
+            <p class="text-center">Lorem, ipsum dolor laudantiuorrupti sunt,bus.</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h2>$60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div class="container mt-1">
+  <!--   <div class="card card-block mb-2">
+      <h4 class="card-title">Card 1</h4>
+      <p class="card-text">Welcom to bootstrap card styles</p>
+      <a href="#" class="btn btn-primary">Submit</a>
+    </div>   -->
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-block">
+        <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+      <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+          <h5 class="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
+          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+    </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-block">
+        <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+      <img src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset">
+          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
+          <p class="card-text">This is a company that builds websites, web .</p> 
+    </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-block">
+        <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+      <img src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg" alt="Photo of sunset">
+          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
+          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+    </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-block">
+        <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+      <img src="https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg" alt="Photo of sunset">
+          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
+          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+    </div>
+      </div>    
+    </div>
+    </div>
+     <!-- other cards -->
+    
+
+    <style>img{
+      height:150px;
+      width:100%;
+    }
+    
+    div [class^="col-"]{
+      padding-left:5px;
+      padding-right:5px;
+    }
+    .card{
+      transition:0.5s;
+      cursor:pointer;
+    }
+    .card-title{  
+      font-size:15px;
+      transition:1s;
+      cursor:pointer;
+    }
+    .card-title i{  
+      font-size:15px;
+      transition:1s;
+      cursor:pointer;
+      color:#ffa710
+    }
+    .card-title i:hover{
+      transform: scale(1.25) rotate(100deg); 
+      color:#18d4ca;
+      
+    }
+    .card:hover{
+      transform: scale(1.05);
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    }
+    .card-text{
+      height:80px;  
+    }
+    
+    .card::before, .card::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale3d(0, 0, 1);
+      transition: transform .3s ease-out 0s;
+      background: rgba(255, 255, 255, 0.1);
+      content: '';
+      pointer-events: none;
+    }
+    .card::before {
+      transform-origin: left top;
+    }
+    .card::after {
+      transform-origin: right bottom;
+    }
+    .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+      transform: scale3d(1, 1, 1);
+    }</style>
+
+    <div class="container" id="other-cards" style="wisdth:30%">
+      <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="images\unlaptop.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Laptop</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="images\unheadphones.jpg" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Headphone</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3></h3>
+              
+              <strong>Phone:</strong> +911234567890<br>
+              <strong>Email:</strong> abc@gmail.com <br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="">Contact</a></li> 
+              <li><a href="#">Terms and Conditions</a></li>
+            
+             </ul>
+            </div>
+
+
+
+           
+
+            
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Find Us On</h4>
+
+              <div class="socail-links mt-3">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>CD</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Chandrika Dhale</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+
+    <!-- <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
